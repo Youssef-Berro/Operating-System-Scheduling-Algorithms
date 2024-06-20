@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.max-cont-input {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.algorithm-input {
+  border-radius: 20px;
+  background-color: var(--color3);
+  box-shadow: 0 0 25px 0.1px rgba(0, 0, 0, 0.826);
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+}
+
+.input-fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.next-btn,
+.calculate-btn,
+.input-back-btn {
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0.6vw;
+  border-radius: 10px;
+  color: white;
+  background-color: var(--color4);
+  border: none;
+  text-transform: capitalize;
+  display: grid;
+  place-items: center;
+}
+
+.next-btn {
+  width: 30%;
+  font-size: 1.5vw;
+}
+
+.calculate-btn {
+  width: 6vw;
+  font-size: 1.1vw;
+}
+
+.input-back-btn {
+  background-color: rgb(184, 38, 38);
+  display: grid;
+  place-items: center;
+}
+
+.processes-input {
+  box-shadow: 0 0 15px 0.1px rgba(0, 0, 0, 0.587);
+  border-radius: 20px;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5vw;
+  background-color: var(--color3);
+  padding: 5px;
+  margin: 0 2vw 2vw;
+}
+
+.processes-input input {
+  padding: 5px;
+  width: 14vw;
+  border-radius: 10px;
+  border: none;
+}
+
+.processes-input {
+  padding: 1vw;
+  letter-spacing: 1.3px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.process-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  font-size: 1.3vw;
+  text-transform: capitalize;
+}
+
+.algorithms {
+  width: 20vw;
+}
+
+.algorithms,
+.nb-of-processes,
+.next-btn,
+.quantum-time,
+.nb-of-queues {
+  padding: 0.8vw;
+  border-radius: 10px;
+  border: none;
+}
+
+.nb-of-processes {
+  width: 100%;
+  font-size: 1.2vw;
+  letter-spacing: 0.1px;
+  text-transform: capitalize;
+}
+
+.next-btn:hover,
+.calculate-btn:hover {
+  background-color: var(--color5);
+}
+
+.input-back-btn:hover {
+  background-color: rgb(142, 25, 25);
+}
+
+.queue-inputs {
+  display: flex;
+  gap: 1vw;
+  padding: 5px;
+}
+
+.step2-inputs-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 13vw;
+  margin-bottom: 2vh;
+}
+
+.step2-inputs-buttons button {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.579);
+}
+
+.input-title {
+  font-size: 3vw;
+  text-transform: capitalize;
+  margin-bottom: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    height: auto;
+  }
+  .algorithm-input {
+    width: 70vh;
+  }
+
+  .input-title {
+    font-size: 4vw;
+  }
+
+  .algorithms {
+    width: 100%;
+  }
+
+  .nb-of-processes {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .next-btn {
+    width: 30%;
+    font-size: 2vw;
+  }
+
+  .input-back-btn,
+  .calculate-btn {
+    width: 100px;
+    padding: 5px;
+    font-size: 100%;
+  }
+
+  .step2-inputs-buttons {
+    margin-left: -80px;
+    gap: 10px;
+  }
+
+  .span-process {
+    font-size: 15px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .full-container {
+    width: 90vw;
+  }
+  .processes-input {
+    width: 90vw;
+  }
+  .process-input {
+    width: 100%;
+  }
+  .process-input p {
+    font-size: 15px;
+  }
+  .processes-input input {
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .full-container {
+    width: 95vw;
+  }
+  .processes-input {
+    width: 95vw;
+  }
+  .algorithm-input {
+    gap: 10px;
+  }
+  .input-title {
+    font-size: 30px;
+  }
+  .quantum-time {
+    padding: 10px;
+  }
+
+  .next-btn {
+    width: 100px;
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+
+  .span-process {
+    font-size: 13px;
+  }
+
+  .process-input p {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,12 @@
+:root {
+    --color1: #f3f4f8;
+    --color2: #d2d4da;
+    --color3: #b3b5bd;
+    --color4: #777986;
+    --color5: #62636c;
+}
+
+body {
+    background-color: rgba(155, 149, 149, 0.522);
+    height: auto;
+}
